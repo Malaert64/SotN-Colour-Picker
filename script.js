@@ -37,5 +37,5 @@ function writeOutput() {
 
 // Converts hex colour val to within a range of 0 to 31.
 function colourHexTo32(inputVal) {
-    return Math.round((parseInt(inputVal, 16) / 255) * 31);
+    return Math.floor((parseInt(inputVal, 16) / 256) * 32);
 }

@@ -1,7 +1,7 @@
 /* Background gradient and general rules */
 body {
   min-height: 100vh;
-  margin: 0 1em 2em 1em;
+  margin: 0 1em 0em 1em;
   background: linear-gradient(
     to bottom,
     #00001e 0%,
@@ -21,8 +21,12 @@ h1, h2, h3 {
 }
 
 /* Spacing and style changes */
-#explanation, #output, .colourpicker {
+#output, .colourpicker {
   padding: 0em 0em 0em 1em;
+}
+
+#explanation {
+  padding: 0em 0em 1.5em 1em;
 }
 
 #header {

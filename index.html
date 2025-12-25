@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SotN Colour Picker</title>
     <link rel="icon" type="image/x-icon" href="JosephsCloak.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="header">
@@ -12,18 +13,18 @@
         <h2>A tool for Castlevania: Symphony of the Night</h2>
     </div>
 
-    <h3>Choose your colours:</h3>
+    <h3>Choose Your Colours:</h3>
 
     <div class="colourpicker">
         <input type="color" id="outer" name="outer" value="#000000">
-        <label for="outer">Exterior Colour</label>
+        <label for="outer">- Exterior Colour</label>
     </div>
     <div class="colourpicker">
         <input type="color" id="inner" name="inner" value="#000000">
-        <label for="inner">Lining Colour</label>
+        <label for="inner">- Lining Colour</label>
     </div>
 
-    <h3>Closest approximation:</h3>
+    <h3>Closest Approximation:</h3>
 
     <div id="output">
         <h4>Exterior R: 0</h4>
@@ -33,6 +34,15 @@
         <h4>Lining G: 0</h4>
         <h4>Lining B: 0</h4>
     </div>
+
+    <h3>Brief Explanation:</h3>
+
+    <div id="explanation">
+        <p>The item "Joseph's Cloak" in <i>Castlevania: Symphony of the Night</i> (<i>SotN</i>) enables players to customzize the exterior and lining colours of Alucard's cloak. This customization is performed by changing red, green, and blue values in a range of 0 to 31. This tool takes a user-provided colour value (initially formatted as hex, internally), separates the RGB values, clamps each value within a range of 0 to 31, and floors each value to the nearest integer.</p>
+        <p><strong>DISCLAIMER:</strong> Given the limitations of this system (scaling from eight-bit RGB to five-bit RGB), and the fact that I don't know exactly how SotN scales RGB values for Joseph's Cloak, you can expect a certain amount of inaccuracy with the outputs of this tool.</p>
+        <p><a href="https://github.com/Malaert64/SotN-Colour-Picker" target="_blank" rel="noopener">GitHub repo here</a></p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

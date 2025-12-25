@@ -1,0 +1,55 @@
+/* Background gradient and general rules */
+body {
+  min-height: 100vh;
+  margin: 0 1em 0 1em;
+  background: linear-gradient(
+    to bottom,
+    #00001e 0%,
+    #1a1b5a 100%
+  );
+
+  color: #e8edff;
+}
+
+/* Font stylings */
+h1, h2, h3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.colourpicker, h4, p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Spacing and style changes */
+#explanation, #output, .colourpicker {
+  padding: 0em 0em 0em 1em;
+}
+
+#header {
+  padding-top: 1em;
+
+  h1 {
+    font-size: 2.5em;
+    margin: 0em 0em 0.3em 0em;
+  }
+
+  h2 {
+    font-style: italic;
+    margin: 0em;
+  }
+}
+
+h3 {
+  margin: 1em 0em 0.5em 0em;
+}
+
+h4, p {
+  margin: 0.5em 0em 0em 0em;
+}
+
+a {
+  background-color: #590001;
+  color: #e8edff;
+  text-decoration: none;
+  padding: 0.2em;
+}
